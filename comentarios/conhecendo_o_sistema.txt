@@ -1,0 +1,13 @@
+O que é entidades?
+
+Como ela funciona?
+
+O que é mais importante para o sistema?
+
+
+
+
+Obs.: 
+
+Quando é criado um sistema ou até mesmo uma melhoria devemos saber o que o negocio precisa.
+Uma entidade precisa de uma identidade.
