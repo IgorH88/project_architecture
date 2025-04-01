@@ -3,8 +3,9 @@
 namespace Alura\Solid\Model;
 
 use Alura\Solid\Model\Pontuacao;
+use Alura\Solid\Model\Assistir;
 
-class AluraMais extends Video implements Pontuacao
+class AluraMais extends Video implements Pontuacao, Assistir
 {
     private $categoria;
 
@@ -16,11 +17,13 @@ class AluraMais extends Video implements Pontuacao
 
     public function recuperarUrl(): string
     {
-        return str_replace(' ', '-', strtolower($this->categoria));
+        return 'http://videos.alura.com.br/' . str_replace(' ', '-', strtolower($this->categoria));
     }
 
     public function recuperaPontuacao(): int
     {
         return $this->minutosDeDuracao() * 2;
     }
+
+
 }

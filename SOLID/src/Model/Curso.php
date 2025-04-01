@@ -31,9 +31,15 @@ class Curso
         $this->videos[] = $video;
     }
 
-    /** @return Video[] */
     public function recuperarVideos(): array
     {
         return $this->videos;
     }
-}
+
+    public function assistir(): void
+    {
+        foreach ($this->recuperarVideos() as $video) {
+            $video->assistir();
+        }
+    }
+}   

@@ -3,8 +3,9 @@
 namespace Alura\Solid\Model;
 
 use Alura\Solid\Model\Pontuacao;
+use Alura\Solid\Model\Assistir;
 
-class Video implements Pontuacao
+class Video implements Pontuacao, Assistir
 {
     /** @var bool */
     protected $assistido = false;
